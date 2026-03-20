@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="tubeGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EAF6FF" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#9DDCFB" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="liquidA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#36F0B6" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#1CB78A" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="liquidB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7B6DFF" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#4C3BDB" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="liquidC" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7BD3FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#2C9ED1" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#071018"/>
+
+  <g opacity="0.35" filter="url(#softGlow)">
+    <rect x="120" y="140" width="80" height="520" rx="40" fill="url(#tubeGlass)" stroke="#C7E9FF" stroke-opacity="0.25"/>
+    <rect x="120" y="360" width="80" height="300" rx="40" fill="url(#liquidA)"/>
+
+    <rect x="320" y="110" width="84" height="580" rx="42" fill="url(#tubeGlass)" stroke="#C7E9FF" stroke-opacity="0.25"/>
+    <rect x="320" y="420" width="84" height="270" rx="42" fill="url(#liquidB)"/>
+
+    <rect x="560" y="160" width="76" height="520" rx="38" fill="url(#tubeGlass)" stroke="#C7E9FF" stroke-opacity="0.25"/>
+    <rect x="560" y="330" width="76" height="350" rx="38" fill="url(#liquidC)"/>
+
+    <rect x="1040" y="120" width="86" height="590" rx="43" fill="url(#tubeGlass)" stroke="#C7E9FF" stroke-opacity="0.25"/>
+    <rect x="1040" y="470" width="86" height="240" rx="43" fill="url(#liquidA)"/>
+
+    <rect x="1240" y="190" width="72" height="470" rx="36" fill="url(#tubeGlass)" stroke="#C7E9FF" stroke-opacity="0.25"/>
+    <rect x="1240" y="340" width="72" height="320" rx="36" fill="url(#liquidB)"/>
+  </g>
+
+  <g opacity="0.25">
+    <circle cx="160" cy="340" r="6" fill="#B8F6DC"/>
+    <circle cx="180" cy="320" r="4" fill="#B8F6DC"/>
+    <circle cx="360" cy="420" r="5" fill="#B7C2FF"/>
+    <circle cx="600" cy="410" r="4" fill="#7BD3FF"/>
+    <circle cx="1080" cy="520" r="5" fill="#B8F6DC"/>
+    <circle cx="1260" cy="380" r="4" fill="#B7C2FF"/>
+  </g>
+</svg>

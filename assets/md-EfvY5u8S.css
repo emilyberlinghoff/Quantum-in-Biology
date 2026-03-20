@@ -1,0 +1,1 @@
+@keyframes floatUpDown-598226ce{0%,to{transform:translateY(0)}50%{transform:translateY(-20px)}}@keyframes floatUpDownSlow-598226ce{0%,to{transform:translateY(0)}50%{transform:translateY(-14px)}}.animate-float[data-v-598226ce]{animation:floatUpDown-598226ce 6s ease-in-out infinite}.animate-float-slow[data-v-598226ce]{animation:floatUpDownSlow-598226ce 8s ease-in-out infinite}

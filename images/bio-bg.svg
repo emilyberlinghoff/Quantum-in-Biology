@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <radialGradient id="cellGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0) scale(1 1)">
+      <stop offset="0%" stop-color="#8FF7D1" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8FF7D1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="helix" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7BD3FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7B6DFF" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="#071018"/>
+
+  <!-- Soft cell glows -->
+  <g opacity="0.35">
+    <circle cx="260" cy="260" r="180" fill="url(#cellGlow)"/>
+    <circle cx="1340" cy="220" r="200" fill="url(#cellGlow)"/>
+    <circle cx="1120" cy="700" r="220" fill="url(#cellGlow)"/>
+    <circle cx="420" cy="720" r="200" fill="url(#cellGlow)"/>
+  </g>
+
+  <!-- Cell outlines -->
+  <g stroke="#B8F6DC" stroke-opacity="0.25" fill="none">
+    <circle cx="260" cy="260" r="120" />
+    <circle cx="1340" cy="220" r="140" />
+    <circle cx="1120" cy="700" r="150" />
+    <circle cx="420" cy="720" r="140" />
+  </g>
+
+  <!-- DNA helix ribbon -->
+  <g opacity="0.35">
+    <path d="M-50 620 C 120 520, 260 720, 420 620 C 580 520, 740 720, 900 620 C 1060 520, 1220 720, 1380 620 C 1500 540, 1660 700, 1700 620" stroke="url(#helix)" stroke-width="10" fill="none"/>
+    <path d="M-50 580 C 120 680, 260 480, 420 580 C 580 680, 740 480, 900 580 C 1060 680, 1220 480, 1380 580 C 1500 660, 1660 500, 1700 580" stroke="url(#helix)" stroke-width="10" fill="none"/>
+  </g>
+
+  <!-- Helix rungs -->
+  <g stroke="#CFE8FF" stroke-opacity="0.25" stroke-width="3">
+    <line x1="120" y1="560" x2="120" y2="640" />
+    <line x1="260" y1="620" x2="260" y2="540" />
+    <line x1="400" y1="560" x2="400" y2="640" />
+    <line x1="540" y1="620" x2="540" y2="540" />
+    <line x1="680" y1="560" x2="680" y2="640" />
+    <line x1="820" y1="620" x2="820" y2="540" />
+    <line x1="960" y1="560" x2="960" y2="640" />
+    <line x1="1100" y1="620" x2="1100" y2="540" />
+    <line x1="1240" y1="560" x2="1240" y2="640" />
+    <line x1="1380" y1="620" x2="1380" y2="540" />
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#7BD3FF" fill-opacity="0.35">
+    <circle cx="300" cy="140" r="4" />
+    <circle cx="520" cy="200" r="3" />
+    <circle cx="780" cy="160" r="4" />
+    <circle cx="1020" cy="260" r="3" />
+    <circle cx="1240" cy="120" r="4" />
+    <circle cx="1420" cy="320" r="3" />
+  </g>
+</svg>
