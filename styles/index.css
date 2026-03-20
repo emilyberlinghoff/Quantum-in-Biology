@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,700&display=swap');
+
+:root {
+  --bg-0: #0d1420;
+  --bg-1: #142233;
+  --bg-2: #19263a;
+  --accent-quantum: #7b6dff;
+  --accent-bio: #2ee6a6;
+  --accent-cyan: #7bd3ff;
+  --accent-rose: #ff7bd4;
+  --text-strong: #eef4fb;
+  --text-muted: #a8b4c3;
+  --panel: rgba(10, 20, 30, 0.55);
+  --panel-border: rgba(123, 211, 255, 0.18);
+}
+
+.slidev-layout {
+  position: relative;
+  color: var(--text-strong);
+  font-family: 'Space Grotesk', system-ui, -apple-system, Segoe UI, sans-serif;
+  background:
+    url('/images/bio-bg.svg') center/cover no-repeat,
+    radial-gradient(1200px 800px at 12% 12%, rgba(46, 230, 166, 0.18), transparent 60%),
+    radial-gradient(1000px 700px at 88% 12%, rgba(123, 109, 255, 0.22), transparent 60%),
+    radial-gradient(900px 700px at 50% 90%, rgba(123, 211, 255, 0.18), transparent 55%),
+    linear-gradient(160deg, var(--bg-0) 0%, var(--bg-1) 45%, var(--bg-2) 100%);
+}
+
+.slidev-layout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      115deg,
+      rgba(46, 230, 166, 0.08) 0,
+      rgba(46, 230, 166, 0.08) 2px,
+      transparent 2px,
+      transparent 120px
+    ),
+    repeating-linear-gradient(
+      295deg,
+      rgba(123, 211, 255, 0.06) 0,
+      rgba(123, 211, 255, 0.06) 1px,
+      transparent 1px,
+      transparent 140px
+    );
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.slidev-layout::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  background: url('/images/wqc-logo.png') center/contain no-repeat;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.45));
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', 'Space Grotesk', serif;
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  line-height: 1.05;
+  background: linear-gradient(90deg, #ffffff 0%, #cfe8ff 45%, #b8f6dc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  color: #cfe8ff;
+}
+
+p, li {
+  color: var(--text-strong);
+}
+
+li {
+  margin: 0.35rem 0;
+}
+
+strong {
+  color: #ffffff;
+}
+
+.slidev-layout table {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.slidev-layout table th,
+.slidev-layout table td {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.slidev-layout a {
+  color: var(--accent-cyan);
+}
+
+.slidev-layout code {
+  color: #cfe8ff;
+  background: rgba(123, 109, 255, 0.16);
+  padding: 0.1rem 0.35rem;
+  border-radius: 6px;
+}
+
+.footnotes {
+  color: var(--text-muted);
+}
+
+/* Elevated cards */
+.vqe-card,
+.curve-card {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(123, 211, 255, 0.08);
+}
+
+/* Section title slides */
+.slidev-layout.center h1,
+.slidev-layout.center h2 {
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Cover emphasis */
+.slidev-layout.cover h1,
+.slidev-layout.intro h1 {
+  font-size: 3.2rem;
+}
